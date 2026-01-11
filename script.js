@@ -1,6 +1,6 @@
 const textInput = document.querySelector("#text-input");
 const charCount = document.querySelector("#char-count");
-const maxLength = 50;
+const maxLength = 100;
 
 textInput.addEventListener("input", () => {
     if (textInput.value.length > maxLength) {
@@ -14,6 +14,6 @@ textInput.addEventListener("input", () => {
     if (length === maxLength) {
         charCount.style.color = "red";
     } else {
-        charCount.style.color = "black";
+        charCount.style.color = "green";
     }
 });
